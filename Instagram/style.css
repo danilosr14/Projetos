@@ -52,13 +52,13 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: white;
-    width: 350px;
+    width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
-    margin-top: px;
+
     min-height: 19rem;
 }
 
@@ -66,20 +66,23 @@ body {
     height: 3rem;
 }
 
-.profile-photo img {
+.profile-photo {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-    width: 150px;
 }
+
+.profile-photo img {
+    height: 6rem;
+}
+
 .instagram-login {
     background-color: #0095f6;
     color: white;
     padding: 8px;
     border-radius: 4px;
-    margin-top: 10px;
 }
 
 .instagram-logout {
