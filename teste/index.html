@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <div class="form">
+        <h2>Cadastro de jogadores</h2>
+            <form class="form1" action="/cadastro.html" method= "dialog" name="formulario">
+                <h3>Nome completo</h3>
+                <input type="text" placeholder="nome completo">
+                <h3>Data de nascimento</h3>
+                <input type="date">
+                <h3>Nome de usuário</h3>
+                <input  type="text" name="usuario" placeholder="usuario">
+                <h3>E-mail</h3>
+                <input type="email" name="E-mail" placeholder="digite seu email">
+                <h3>Senha</h3>
+                <input type="password" minlength="6" required="required" name="senha" placeholder="senha">
+                <button onclick="validarUsuario()">Inscrever-se</button>
+            </form>
+    </div> 
+</body>
+</html>
