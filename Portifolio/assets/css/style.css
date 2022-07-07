@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+}
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+header .menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu .menu-line {
+    height: 3px;
+    background-color: #fff;
+
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container .left-side {
+    flex: 1;
+    background-color: #3b576d;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .right-side {
+    flex: 1;
+    background-image: url('../images/Danilo-Rocha.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.container .info {
+    color: white;
+}
+
+.container .info .profession {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.container .info .name {
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .info .buttons a {
+    display: inline-block;
+    background-color: white;
+    color: #3b576d;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container .info .buttons a.light{
+    background-color: #3b576d;
+    color: white;
+    box-shadow: 0px 0px 10px #111;
+}
+
+.container .info .buttons a:hover {
+    opacity: 0.8;
+    animation: ease-in-out;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    header {
+        position: initial;
+        background-color: #3b576d;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .container .left-side {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer {
+        position: initial;
+        color: #333;
+        font-size: 16px;
+    }
+}
+@media (max-width: 460px) {
+    .container .info .name {
+        font-size: 50px;
+    }
+
+    .container .left-side .buttons a{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
