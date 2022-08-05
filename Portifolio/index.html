@@ -11,9 +11,17 @@
     <header>
         <div class="logo">Rocha.</div>
         <div class="menu">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
+            <input type="checkbox" id="toggle" onclick="menuAberto()">
+            <label class="checkbox" for="toggle">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </label>
+        </div>
+        <div id="menu-item">
+            <a href="#">Instagram</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Github</a>
         </div>
     </header>
     <section class="container">
@@ -31,6 +39,7 @@
            
         </div>
     </section>
+    <script src="assets/script/script.js"></script>
     <footer>
         Copyright ©2022 All rights reserved | This template is made with ❤ by Danilo Rocha
     </footer>
